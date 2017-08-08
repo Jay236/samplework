@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+             <title>portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+                            <!--CSS-->
+<link rel=" stylesheet" href="index.css">
+                        <!--Angular -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>                     <!--Angular route-->
+<!--<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
+
+     
+                         <!--CSS Animate-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+                              <!--Bootstap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+                               <!--Jquery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="skill.bars.jquery.js"></script>
+    
+
+                         <!--CSS Font style-->
+<link href='//fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+       
+</head>
+    
+    
+<body ng-app="myApp">
+    
+                         <!--Side Navbar-->
+
+    <div id="mySidenav" class="sidenav" style="font-family:'Sofia';">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT ME</a>
+            <a href="#extras">SKILLS</a>
+            <a href="#experience">WORK</a>
+            <a href="#contact">CONTACT</a>
+                 <!--Menu Bar-->
+    </div>
+    <span id="side" style="font-size:25px; cursor:pointer; color:black; margin-left:10px">&#9776;</span>
+  
+                          <!--View Page-->
+          
+                       <ng-view></ng-view>
+
+                              <!--JS-->
+    <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAn2fy_iyVrdB5ycJn4wndWrqafegSSeTo",
+    authDomain: "portfolio-42964.firebaseapp.com",
+    databaseURL: "https://portfolio-42964.firebaseio.com",
+    projectId: "portfolio-42964",
+    storageBucket: "",
+    messagingSenderId: "353359395968"
+  };
+  firebase.initializeApp(config);
+</script>
+                <script src="index.js"></script>
+
+</body>
+
+</html>
