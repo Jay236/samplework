@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
                             <!--CSS-->
-<link rel=" stylesheet" href="index.css">
+<link rel=" stylesheet" href="css/index.css">
                         <!--Angular -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>                     <!--Angular route-->
 <!--<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>-->
@@ -23,7 +23,7 @@
                                <!--Jquery-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="skill.bars.jquery.js"></script>
+<script src="js/skill.bars.jquery.js"></script>
     
 
                          <!--CSS Font style-->
@@ -46,11 +46,12 @@
             <a href="#contact">CONTACT</a>
                  <!--Menu Bar-->
     </div>
+    
     <span id="side" style="font-size:25px; cursor:pointer; color:black; margin-left:10px">&#9776;</span>
   
                           <!--View Page-->
           
-                       <ng-view></ng-view>
+                       <div ng-view></div>
 
                               <!--JS-->
     <script>
@@ -65,7 +66,7 @@
   };
   firebase.initializeApp(config);
 </script>
-                <script src="index.js"></script>
+                <script src="js/index.js"></script>
 
 </body>
 

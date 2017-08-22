@@ -21,24 +21,24 @@ $(document).ready(function () {
         $routeProvider
             
             .when("/", {
-                templateUrl: "home.html"
+                templateUrl: "views/home.html"
             })
         .when("/home", {
-                templateUrl: "home.html"
+                templateUrl: "views/home.html"
             })
             .when("/about", {
-                templateUrl: "about.html"
+                templateUrl: "views/about.html"
             })
             .when("/extras", {
-                templateUrl: "extras.html",
+                templateUrl: "views/extras.html",
                 controller: "myCtrl"
             })
             .when("/experience", {
                 url:"/experience",
-                templateUrl: "experience.html"
+                templateUrl: "views/experience.html"
             })
             .when("/contact", {
-                templateUrl: "contact.html"    
+                templateUrl: "views/contact.html"    
             });
 
     });
@@ -56,3 +56,4 @@ app.controller('myCtrl', function($scope) {
 	
 });
 });
+
